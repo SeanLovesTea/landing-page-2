@@ -1,12 +1,20 @@
 body{
     padding:0;
     margin:0;
+    display:flex;
+    flex-direction: column; 
+}
+
+.container{
+    max-width:1246px;
+    margin:auto;
+    padding:0 36px 0;
 }
 
 .section-hero{
-    
     background-color:#1F2937 ;
-    padding: 0 48px;
+    padding: 0 0 60px ;
+    flex-grow:1;
 }
 
 .nav{
@@ -33,8 +41,9 @@ a{
 }
 
 .hero-content{
-    padding: 36px 0;
+    padding: 36px 0px;
     display:flex;
+    max-height:250px;
 }
 
 .hero-left, .hero-right{
@@ -45,6 +54,14 @@ a{
 .hero-right{
     background-color:#E5E7EB ;
     margin-left:16px;
+    overflow:hidden;
+}
+img {
+    object-fit: fill;
+    max-width: 100%;
+    object-position: 10% 10%;
+    vertical-align: bottom;
+    
 }
 
 .hero-text-large{
@@ -66,11 +83,85 @@ a{
 
 button{
     background-color: #3882f6;
-    padding: 8px 12px;
+    padding: 8px 16px;
     border:0;
-    border-radius: 12%;
+    border-radius: 8px;
     color:#E5E7EB;
     font-size: 18px;
     font-weight:700;
 
+}
+
+.white-border{
+    border:2px solid #E5E7EB;
+}
+
+.title{
+    color:#1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.section-content{
+    padding:36px 0 60px;
+}
+.cards-section{
+    display:flex;
+    justify-content: center;
+}
+.card{
+    width:150px;
+    margin:24px 12px;
+    text-align:center;
+}
+.card-box{
+    height:150px;
+    width:auto;
+    border: 2px solid blue;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.section-quote{
+    background-color:#E5E7EB;
+    padding:60px 0 60px;
+}
+.quote{
+    font: 36px light italic #e5e5e5; 
+    width:500px;
+    margin:auto;
+}
+.text-quote-signature{
+    font-weight: 700;
+    text-align: end;
+}
+
+.section-cta{
+    padding: 60px 0 60px;
+}
+
+.cta{
+    background-color: #3882f6;
+    padding: 24px 36px 24px;
+    border-radius: 8px;
+    display:flex;
+}
+
+.text-large-cta{
+    font-size: 18px;
+    font-weight:700;
+    color: #F9FAF8;
+}
+.text-medium-cta{
+    color: #F9FAF8;
+}
+.right-cta{
+    margin-left:auto;
+}
+.footer{
+    background-color: #1F2937;
+    text-align: center;
+    padding: 36px 0 36px;
+    color:#E5E7EB;
 }
